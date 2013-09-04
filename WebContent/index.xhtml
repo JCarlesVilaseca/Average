@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<h:head>
+	<title>Average</title>	
+</h:head>
+
+<h:body>
+	<h2>Average of 5 numbers</h2>
+		
+	<h:form>
+	    <h:outputLabel value="Sample 1: " for="sampling1" />
+	    <h:inputText id="sampling1" value="#{average.sampling[0]}" />
+		<br />
+
+	    <h:outputLabel value="Sample 2: " for="sampling2" />
+	    <h:inputText id="sampling2" value="#{average.sampling[1]}" />
+		<br />
+
+	    <h:outputLabel value="Sample 3: " for="sampling3" />
+	    <h:inputText id="sampling3" value="#{average.sampling[2]}" />
+		<br />
+
+	    <h:outputLabel value="Sample 4: " for="sampling4" />
+	    <h:inputText id="sampling4" value="#{average.sampling[3]}" />
+		<br />
+
+	    <h:outputLabel value="Sample 5: " for="sampling5" />
+	    <h:inputText id="sampling5" value="#{average.sampling[4]}" />
+		<br />
+		
+		<h:commandButton value="Solve"></h:commandButton>
+	</h:form>
+	<br />
+
+	<h:outputLabel value="Result: " for="result" />
+	<h:outputText id="result">#{average.result}</h:outputText>
+   
+</h:body>
+</html>
